@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.cont {
+  opacity: 0;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 300px 300px;
+  gap: 20px;
+}
+.cont label {
+  margin-top: 10px;
+  width: 300px;
+}
+.cont #label_inputs img {
+  opacity: 0;
+}
+.cont #label_inputs p {
+  font-size: 14px;
+  font-weight: 400;
+  color: blue;
+}
+.cont #label_inputs span p {
+  color: #595959;
+}
+.cont #inputs {
+  padding: 12px;
+  font-size: 20px;
+  margin-top: 6px;
+  width: 277px;
+  height: 59px;
+  border-radius: 7px;
+  border: solid 1px blue;
+}
+.cont input {
+  padding: 12px;
+  font-size: 20px;
+  margin-top: 6px;
+  width: 277px;
+  height: 59px;
+  border-radius: 7px;
+  border: solid 1px #949494;
+}
+
+#but {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  margin-top: 27px;
+  width: 277px;
+  height: 59px;
+  background-color: #4200FF;
+  border: solid 0px;
+  border-radius: 7px;
+  color: white;
+  font-size: 14px;
+}
+
+.first_text h1 {
+  text-align: center;
+  font-size: 46px;
+}
+
+.last_text {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.load {
+  display: flex;
+  justify-content: center;
+  margin-right: 100px;
+}
+
+.loader {
+  margin-top: 300px;
+  position: absolute;
+  perspective: 700px;
+}
+
+.loader > span {
+  font-size: 130px;
+  font-family: "franklin gothic medium", sans-serif;
+  display: inline-block;
+  animation: flip 2.6s infinite linear;
+  transform-origin: 0 70%;
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+}
+
+@keyframes flip {
+  35% {
+    transform: rotateX(360deg);
+  }
+  100% {
+    transform: rotatex(360deg);
+  }
+}
+.loader > span:nth-child(even) {
+  color: red;
+}
+
+.loader > span:nth-child(2) {
+  animation-delay: 0.3s;
+}
+
+.loader > span:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+.loader > span:nth-child(4) {
+  animation-delay: 0.9s;
+}
+
+.loader > span:nth-child(5) {
+  animation-delay: 1.2s;
+}
+
+.loader > span:nth-child(6) {
+  animation-delay: 1.5s;
+}
+
+.loader > span:nth-child(7) {
+  animation-delay: 1.8s;
+}
+
+.valid {
+  border: solid 2px #2ecc71;
+}
+
+.invalid {
+  border: solid 2px red;
+}/*# sourceMappingURL=style.css.map */
